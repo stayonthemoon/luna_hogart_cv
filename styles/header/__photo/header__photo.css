@@ -1,0 +1,11 @@
+.header__photo {
+    display: block;
+    background-image: url("../../../images/header/header__photo.png");
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}

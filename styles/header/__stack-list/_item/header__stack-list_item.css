@@ -1,0 +1,11 @@
+.header__stack-list_item {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFD84E;
+    margin: 0;
+    padding: 0;
+}

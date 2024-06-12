@@ -1,0 +1,10 @@
+.header__descr {
+    margin: 0;
+    margin-top: 35px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #F5F5F5;
+}

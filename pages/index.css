@@ -1,0 +1,25 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+@import url('../styles/body/body.css');
+
+@import url('../styles/header/header.css');
+@import url('../styles/header/__wrapper/header__wrapper.css');
+@import url('../styles/header/__list/header__list.css');
+@import url('../styles/header/__photo/header__photo.css');
+@import url('../styles/header/__title/header__title.css');
+@import url('../styles/header/__stack-list/header__stack-list.css');
+@import url('../styles/header/__stack-list/_item/header__stack-list_item.css');
+@import url('../styles/header/__descr/header__descr.css');
+
+@import url('../styles/stack/stack.css');
+@import url('../styles/stack/__list/stack__list.css');
+@import url('../styles/stack/__list-item/_pic/stack__list-item_pic.css');
+
+@import url('../styles/whatido/whatido.css');
+@import url('../styles/whatido/__wrapper/whatido__wrapper.css');
+@import url('../styles/whatido/__title/whatido__title.css');
+@import url('../styles/whatido/__descr-wrap/whatido__descr-wrap.css');
+@import url('../styles/whatido/__descr/whatido__descr.css');
+
+@import url('../styles/bluetitle/bluetitle.css');
+@import url('../styles/yellowline/yellowline.css');

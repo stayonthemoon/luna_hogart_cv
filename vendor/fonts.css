@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Koulen-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/RobotoCondensed-Bold.ttf');
+}
