@@ -17,9 +17,26 @@
 
 @import url('../styles/whatido/whatido.css');
 @import url('../styles/whatido/__wrapper/whatido__wrapper.css');
-@import url('../styles/whatido/__title/whatido__title.css');
 @import url('../styles/whatido/__descr-wrap/whatido__descr-wrap.css');
-@import url('../styles/whatido/__descr/whatido__descr.css');
+@import url('../styles/whatido/__list-cards/whatido__list-cards.css');
+@import url('../styles/whatido/__list-cards/_item/whatido__list-cards_item.css');
+@import url('../styles/whatido/__list-cards/_item-pic/whatido__list-cards_item-pic.css');
+@import url('../styles/whatido/__list-cards/_item-title/whatido__list-cards_item-title.css');
 
+@import url('../styles/webdesign/webdesign.css');
+@import url('../styles/webdesign/__wrapper/webdesign__wrapper.css');
+
+@import url('../styles/accordion/accordion.css');
+@import url('../styles/accordion/__wrapper/accordion__wrapper.css');
+@import url('../styles/accordion/__panel/accordion__panel.css');
+@import url('../styles/accordion/__button/accordion__button.css');
+@import url('../styles/accordion/__button/__button-title/accordion__button-title.css');
+
+@import url('../styles/webdev/webdev.css');
+@import url('../styles/webdev/__wrapper/webdev__wrapper.css');
+
+@import url('../styles/section/section_title/section_title.css');
+@import url('../styles/section/section_descr/section_descr.css');
 @import url('../styles/bluetitle/bluetitle.css');
 @import url('../styles/yellowline/yellowline.css');
+@import url('../styles/triangle/triangle.css');

@@ -1,0 +1,14 @@
+.whatido__list-cards_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(17, 28, 36, 1) 35%, rgba(35, 58, 75, 1) 65%, rgba(56, 114, 155, 1) 100%);
+}
+
+.whatido__list-cards_item:last-child,
+.whatido__list-cards_item:nth-child(2) {
+    margin-top: 40px;
+}
