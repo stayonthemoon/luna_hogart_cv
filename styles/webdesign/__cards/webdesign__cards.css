@@ -1,0 +1,22 @@
+.webdesign__cards {
+    padding: 0;
+    margin: 100px auto;
+    display: grid;
+    gap: 12%;
+    grid-template-columns: repeat(2, minmax(200px, 450px));
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 80px;
+    list-style: none;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .webdesign__cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%;
+        max-width: 90vw;
+    }
+}

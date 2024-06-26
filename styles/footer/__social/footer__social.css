@@ -1,0 +1,26 @@
+.footer__social {
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 50px;
+    width: 50px;
+    transition: 0.16s ease;
+}
+
+.footer__social-git {
+    background: center / contain no-repeat url('../../../icons/footer/github.svg');
+}
+
+.footer__social-google {
+    background: center / contain no-repeat url('../../../icons/footer/google.svg');
+}
+
+.footer__social-whatsapp {
+    background: center / contain no-repeat url('../../../icons/footer/whatsapp.svg');
+}
+
+.footer__social:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+    filter: drop-shadow(1px -1px #4EB4FF);
+}

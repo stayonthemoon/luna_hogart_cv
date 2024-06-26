@@ -1,0 +1,7 @@
+.cards-item_pic {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+}

@@ -1,0 +1,15 @@
+.cards-item_link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.7s ease;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.cards-item_link:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+    filter: contrast(125%);
+}

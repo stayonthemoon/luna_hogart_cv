@@ -1,6 +1,7 @@
 .stack__list-item_pic {
     display: block;
     max-height: 70px;
+    width: 5vw;
     margin: 0;
     padding: 0;
 }

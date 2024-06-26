@@ -6,3 +6,9 @@
     padding: 0;
     padding-top: 100px;
 }
+
+@media screen and (max-width: 450px) {
+    .header {
+        padding-top: 60px;
+    }
+}

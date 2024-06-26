@@ -25,6 +25,10 @@
 
 @import url('../styles/webdesign/webdesign.css');
 @import url('../styles/webdesign/__wrapper/webdesign__wrapper.css');
+@import url('../styles/webdesign/__cards/webdesign__cards.css');
+@import url('../styles/webdesign/__cards/webdesign__cards.css');
+@import url('../styles/webdesign/__cards/_cards-item/webdesign_cards-item.css');
+@import url('../styles/webdesign/__cards/_cards-item/webdesign_cards-item_pic.css');
 
 @import url('../styles/accordion/accordion.css');
 @import url('../styles/accordion/__wrapper/accordion__wrapper.css');
@@ -34,9 +38,25 @@
 
 @import url('../styles/webdev/webdev.css');
 @import url('../styles/webdev/__wrapper/webdev__wrapper.css');
+@import url('../styles/webdev/__cards/webdev__cards.css');
+@import url('../styles/webdev/__cards-group/webdev__cards-group.css');
+@import url('../styles/webdev/__cards/_cards-item/webdev_cards-item_pic.css');
+@import url('../styles/webdev/__cards-group/_title/webdev__cards-group_title.css');
+
+@import url('../styles/cards/cards-item.css');
+@import url('../styles/cards/cards-item_pic.css');
+@import url('../styles/cards/cards-item_title.css');
+@import url('../styles/cards/cards-item_descr.css');
+@import url('../styles/cards/cards-item_link.css');
+@import url('../styles/cards/cards-border.css');
 
 @import url('../styles/section/section_title/section_title.css');
 @import url('../styles/section/section_descr/section_descr.css');
 @import url('../styles/bluetitle/bluetitle.css');
 @import url('../styles/yellowline/yellowline.css');
 @import url('../styles/triangle/triangle.css');
+
+@import url('../styles/footer/footer.css');
+@import url('../styles/footer/__wrapper/footer__wrapper.css');
+@import url('../styles/footer/__social/footer__social.css');
+@import url('../styles/footer/__button-up/footer__button-up.css');

@@ -1,8 +1,22 @@
 .yellowline {
+    margin: 30px 0;
+    padding: 0;
     display: block;
     height: 3px;
     width: 125px;
     background-color: #FFD84E;
-    margin: 30px 0;
-    padding: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .yellowline {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .yellowline {
+        margin: 10px 0;
+        height: 2px;
+        width: 100%;
+    }
 }

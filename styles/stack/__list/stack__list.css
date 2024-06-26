@@ -4,6 +4,37 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     list-style: none;
     gap: 50px;
+    max-width: 80vw;
+}
+
+@media screen and (max-width: 900px) {
+    .stack__list {
+        padding: 60px 0;
+        gap: 40px;
+        max-width: 90vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .stack__list {
+        padding: 40px 0;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .stack__list {
+        padding: 30px 0;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .stack__list {
+        padding: 20px 0;
+        gap: 20px;
+    }
 }

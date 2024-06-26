@@ -1,0 +1,10 @@
+.webdev__cards {
+    padding: 0;
+    margin: 100px auto;
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 80px;
+    list-style: none;
+    text-align: center;
+    color: #F5F5F5;
+}
