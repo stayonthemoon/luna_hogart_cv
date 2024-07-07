@@ -1,0 +1,164 @@
+.education__carousel {
+    position: relative;
+    width: 100%;
+    max-width: 60vw;
+    margin: 40px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.education__carousel-wrapper {
+    overflow: hidden;
+}
+
+.education__carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.education__carousel-item {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.education__carousel-icon {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-size: 24px;
+    color: white;
+    margin: 0 auto;
+}
+
+.education__carousel-title {
+    margin: 30px 0 0 0;
+    padding: 0;
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 25px;
+}
+
+.education__carousel-descr {
+    margin: 30px auto;
+    padding: 0;
+    max-width: 600px;
+    font-size: 22px;
+    max-width: 25vw;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.education__carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education__carousel-arrow::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #FFD84E;
+    border-right: 3px solid #FFD84E;
+}
+
+.education__carousel-arrow--left {
+    left: 0;
+}
+
+.education__carousel-arrow--left::before {
+    transform: rotate(-135deg);
+}
+
+.education__carousel-arrow--right {
+    right: 0;
+}
+
+.education__carousel-arrow--right::before {
+    transform: rotate(45deg);
+}
+
+.education__carousel-dots {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.education__carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.education__carousel-dot--active {
+    background: #4EB4FF;
+}
+
+@media screen and (max-width: 650px) {
+
+    .education__carousel {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .education__carousel {
+        padding: 0 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .education__carousel-item {
+        padding: 2px;
+    }
+
+    .education__carousel-icon {
+        width: 110px;
+        height: 110px;
+        font-size: 18px;
+    }
+
+    .education__carousel-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .education__carousel-arrow::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .education__carousel-dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+    }
+}

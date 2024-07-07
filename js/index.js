@@ -2,7 +2,6 @@ const accHeading = document.querySelectorAll(".accordion");
 const accPanel = document.querySelectorAll(".accordion__panel");
 const goUpButton = document.getElementById("go-up-button");
 
-// Функция для обновления состояния аккордеона (открыто/закрыто)
 function updateAccordionState(panel, button, triangle) {
     if (panel.style.maxHeight && panel.style.maxHeight !== "0px") {
         button.textContent = "Show Less";
@@ -13,7 +12,6 @@ function updateAccordionState(panel, button, triangle) {
     }
 }
 
-// Функция для показа панели аккордеона
 function showPanel(accordion, panel, button, triangle) {
     accordion.classList.add("active");
     panel.style.maxHeight = panel.scrollHeight + "px";
@@ -21,7 +19,6 @@ function showPanel(accordion, panel, button, triangle) {
     if (triangle) triangle.classList.add("triangle_less");
 }
 
-// Функция для скрытия всех панелей аккордеона
 function hideAllPanels(callback) {
     accPanel.forEach((panel, index) => {
         panel.style.maxHeight = null;
@@ -34,7 +31,6 @@ function hideAllPanels(callback) {
     if (callback) requestAnimationFrame(callback);
 }
 
-// Функция для скрытия одной панели аккордеона
 function hidePanel(panel, button, triangle) {
     panel.style.maxHeight = null;
     panel.previousElementSibling.classList.remove("active");
@@ -42,7 +38,6 @@ function hidePanel(panel, button, triangle) {
     if (triangle) triangle.classList.remove("triangle_less");
 }
 
-// Обработчик клика по аккордеону
 accHeading.forEach((heading) => {
     const button = heading.querySelector(".accordion__button");
     const triangle = heading.querySelector(".triangle");
@@ -53,7 +48,7 @@ accHeading.forEach((heading) => {
     }
 
     heading.addEventListener("click", function (event) {
-        event.preventDefault(); // Предотвращаем дефолтное поведение
+        event.preventDefault();
 
         if (panel.style.maxHeight && panel.style.maxHeight !== "0px") {
             hidePanel(panel, button, triangle);
@@ -61,12 +56,9 @@ accHeading.forEach((heading) => {
             const currentScroll = window.scrollY;
             hideAllPanels(() => {
                 showPanel(this, panel, button, triangle);
-                // Прокрутка к началу новой секции после ее открытия
                 setTimeout(() => {
                     this.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 300); // Задержка для плавной анимации раскрытия
-
-                // Восстановление позиции прокрутки
+                }, 300);
                 window.scrollTo({
                     top: currentScroll,
                     behavior: 'smooth'
@@ -76,10 +68,88 @@ accHeading.forEach((heading) => {
     });
 });
 
-// Обработчик клика по кнопке "Go Up"
 goUpButton.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
+});
+
+
+function initCarousel(carouselClass) {
+    const carousel = document.querySelector(carouselClass);
+    const container = carousel.querySelector(`${carouselClass}-container`);
+    const items = carousel.querySelectorAll(`${carouselClass}-item`);
+    const dotsContainer = carousel.querySelector(`${carouselClass}-dots`);
+    const itemsPerPage = 2;
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+    let currentPage = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function createDots() {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalPages; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add(`${carouselClass.slice(1)}-dot`);
+            dot.addEventListener('click', () => goToPage(i));
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    function addEventListeners() {
+        carousel.querySelector(`${carouselClass}-arrow--left`).addEventListener('click', prevPage);
+        carousel.querySelector(`${carouselClass}-arrow--right`).addEventListener('click', nextPage);
+        carousel.addEventListener('touchstart', handleTouchStart);
+        carousel.addEventListener('touchend', handleTouchEnd);
+    }
+
+    function updateCarousel() {
+        container.style.transform = `translateX(-${currentPage * 100}%)`;
+        updateDots();
+    }
+
+    function updateDots() {
+        const dots = dotsContainer.querySelectorAll(`${carouselClass}-dot`);
+        dots.forEach((dot, index) => {
+            dot.classList.toggle(`${carouselClass.slice(1)}-dot--active`, index === currentPage);
+        });
+    }
+
+    function goToPage(page) {
+        currentPage = page;
+        updateCarousel();
+    }
+
+    function nextPage() {
+        currentPage = (currentPage + 1) % totalPages;
+        updateCarousel();
+    }
+
+    function prevPage() {
+        currentPage = (currentPage - 1 + totalPages) % totalPages;
+        updateCarousel();
+    }
+
+    function handleTouchStart(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }
+
+    function handleTouchEnd(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchEndX < touchStartX) nextPage();
+        if (touchEndX > touchStartX) prevPage();
+    }
+
+    createDots();
+    addEventListeners();
+    updateCarousel();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    initCarousel('.education__carousel');
+});
+
+window.addEventListener('resize', function () {
+    initCarousel('.education__carousel');
 });

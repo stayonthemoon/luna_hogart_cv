@@ -1,4 +1,4 @@
-.webdesign__cards {
+.animations__cards {
     padding: 0;
     margin: 100px auto 0;
     display: grid;
@@ -14,7 +14,7 @@
 
 
 @media screen and (max-width: 1050px) {
-    .webdesign__cards {
+    .animations__cards {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10%;
         max-width: 90vw;
