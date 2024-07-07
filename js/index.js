@@ -75,7 +75,6 @@ goUpButton.addEventListener("click", () => {
     });
 });
 
-
 function initCarousel(carouselClass) {
     const carousel = document.querySelector(carouselClass);
     const container = carousel.querySelector(`${carouselClass}-container`);
@@ -102,6 +101,7 @@ function initCarousel(carouselClass) {
         carousel.querySelector(`${carouselClass}-arrow--right`).addEventListener('click', nextPage);
         carousel.addEventListener('touchstart', handleTouchStart);
         carousel.addEventListener('touchend', handleTouchEnd);
+        document.addEventListener('keydown', handleKeyDown);
     }
 
     function updateCarousel() {
@@ -139,6 +139,14 @@ function initCarousel(carouselClass) {
         touchEndX = e.changedTouches[0].screenX;
         if (touchEndX < touchStartX) nextPage();
         if (touchEndX > touchStartX) prevPage();
+    }
+
+    function handleKeyDown(e) {
+        if (e.key === 'ArrowLeft') {
+            prevPage();
+        } else if (e.key === 'ArrowRight') {
+            nextPage();
+        }
     }
 
     createDots();

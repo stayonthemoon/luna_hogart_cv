@@ -9,3 +9,29 @@
     font-style: normal;
     color: #F5F5F5;
 }
+
+@media screen and (max-width: 660px) {
+    .cards-item_title {
+        font-size: 30px;
+        margin: 30px 0 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cards-item_title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cards-item_title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cards-item_title {
+        font-size: 22px;
+        margin: 20px 0 10px;
+    }
+}

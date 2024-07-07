@@ -9,3 +9,15 @@
     color: #F5F5F5;
     font-size: 60px;
 }
+
+@media screen and (max-width: 660px) {
+    .section_title {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section_title {
+        font-size: 30px;
+    }
+}

@@ -15,8 +15,16 @@
 
 @media screen and (max-width: 500px) {
     .yellowline {
-        margin: 10px 0;
+        margin: 15px 0;
         height: 2px;
-        width: 100%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .yellowline {
+        margin: 15px 0;
+        height: 2px;
+        width: 30%;
     }
 }

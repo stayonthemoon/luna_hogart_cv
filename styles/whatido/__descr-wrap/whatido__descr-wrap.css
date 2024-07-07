@@ -4,3 +4,9 @@
     flex-direction: column;
     gap: 30px;
 }
+
+@media screen and (max-width: 425px) {
+    .whatido__descr-wrap {
+        gap: 20px;
+    }
+}

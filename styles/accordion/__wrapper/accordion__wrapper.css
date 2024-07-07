@@ -5,3 +5,9 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@media screen and (max-width: 500px) {
+    .accordion__wrapper {
+        margin-top: 50px;
+    }
+}

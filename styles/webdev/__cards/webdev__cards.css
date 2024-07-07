@@ -8,3 +8,18 @@
     text-align: center;
     color: #F5F5F5;
 }
+
+@media screen and (max-width: 660px) {
+    .webdev__cards {
+        margin: 70px auto 0;
+        grid-row-gap: 40px;
+        column-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .webdev__cards {
+        margin: 50px auto 0;
+        grid-row-gap: 40px;
+    }
+}

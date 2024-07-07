@@ -8,3 +8,27 @@
     line-height: 25px;
     color: #F5F5F5;
 }
+
+@media screen and (max-width: 660px) {
+    .cards-item_descr {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cards-item_descr {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cards-item_descr {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cards-item_descr {
+        font-size: 15px;
+    }
+}

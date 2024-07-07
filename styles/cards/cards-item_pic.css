@@ -5,3 +5,21 @@
     object-fit: cover;
     max-width: 100%;
 }
+
+@media screen and (max-width: 769px) {
+    .cards-item_pic {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .cards-item_pic {
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards-item_pic {
+        height: 15vh;
+    }
+}

@@ -7,8 +7,14 @@
     padding-top: 100px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 660px) {
     .header {
         padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        padding-top: 50px;
     }
 }

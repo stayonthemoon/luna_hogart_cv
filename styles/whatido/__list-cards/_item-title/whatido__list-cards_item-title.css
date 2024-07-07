@@ -9,3 +9,16 @@
     color: #ffffff;
     font-size: 20px;
 }
+
+@media screen and (max-width: 769px) {
+    .whatido__list-cards_item-title {
+        padding: 0 10px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .whatido__list-cards_item-title {
+        font-size: 16px;
+    }
+}

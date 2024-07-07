@@ -1,7 +1,13 @@
 .main__wrapper {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 660px) {
+    .main__wrapper {
+        max-width: 80vw;
+    }
 }

@@ -1,7 +1,7 @@
 .education__carousel {
     position: relative;
     width: 100%;
-    max-width: 60vw;
+    max-width: 70vw;
     margin: 40px auto;
     padding: 0 40px;
     box-sizing: border-box;
@@ -10,6 +10,7 @@
 .education__carousel-wrapper {
     overflow: hidden;
 }
+
 
 .education__carousel-container {
     display: flex;
@@ -26,6 +27,7 @@
     box-sizing: border-box;
 }
 
+
 .education__carousel-icon {
     background-color: transparent;
     display: flex;
@@ -36,6 +38,7 @@
     font-size: 24px;
     color: white;
     margin: 0 auto;
+    object-fit: fill;
 }
 
 .education__carousel-title {
@@ -48,6 +51,7 @@
     text-align: center;
     font-size: 25px;
 }
+
 
 .education__carousel-descr {
     margin: 30px auto;
@@ -101,7 +105,7 @@
 
 .education__carousel-dots {
     position: absolute;
-    bottom: -20px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -120,15 +124,67 @@
     background: #4EB4FF;
 }
 
+@media screen and (max-width: 769px) {
+    .education {
+        padding: 70px 0;
+    }
+
+    .education__carousel {
+        max-height: 50vh;
+        max-width: 85vw;
+    }
+
+    .education__carousel-container {
+        margin-bottom: 15px;
+    }
+
+    .education__carousel-item {
+        gap: 20px;
+    }
+
+    .education__carousel-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .education__carousel-title {
+        font-size: 20px;
+        margin: 0;
+    }
+
+
+    .education__carousel-descr {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .education__carousel-dot {
+        width: 12px;
+        height: 12px;
+        margin: 0 12px;
+    }
+}
+
 @media screen and (max-width: 650px) {
+    .education {
+        padding: 40px 0;
+    }
 
     .education__carousel {
         margin-left: 30px;
         margin-right: 30px;
     }
+
+    .education__carousel-dots {
+        bottom: -40px;
+    }
 }
 
 @media screen and (max-width: 425px) {
+    .education {
+        width: 90vw;
+        margin: 0 auto;
+    }
 
     .education__carousel {
         padding: 0 20px;
@@ -160,5 +216,25 @@
         width: 8px;
         height: 8px;
         margin: 0 3px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .education__carousel {
+        margin: 30px auto;
+    }
+
+    .education__carousel-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .education__carousel-title {
+        font-size: 18px;
+    }
+
+    .education__carousel-descr {
+        font-size: 16px;
     }
 }

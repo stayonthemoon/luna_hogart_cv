@@ -15,3 +15,10 @@
         max-width: 90vw;
     }
 }
+
+@media screen and (max-width: 660px) {
+    .webdev__cards-group {
+        column-gap: 40px;
+        grid-row-gap: 40px;
+    }
+}

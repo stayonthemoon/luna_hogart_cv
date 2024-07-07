@@ -24,6 +24,7 @@
 
 @media screen and (max-width: 500px) {
     .header__descr {
-        margin: 15px 0 25px;
+        margin: 15px 0 15px;
+        font-size: 12px;
     }
 }

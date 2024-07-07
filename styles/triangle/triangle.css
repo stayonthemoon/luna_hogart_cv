@@ -13,3 +13,10 @@
 .triangle_less {
     background-image: url('../../icons/show/showless.svg');
 }
+
+@media screen and (max-width: 500px) {
+    .triangle {
+        height: 20px;
+        width: 40px;
+    }
+}

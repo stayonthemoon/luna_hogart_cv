@@ -12,12 +12,16 @@
     font-size: 20px;
 }
 
-
 .footer__button-up:hover {
     transform: scale(1.05);
 }
 
-/* Дополнительные стили для анимации */
 .footer__button-up:active {
     transform: scale(0.95);
+}
+
+@media screen and (max-width: 600px) {
+    .footer__button-up {
+        margin-top: 20px 0 0;
+    }
 }

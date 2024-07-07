@@ -8,3 +8,9 @@
     text-align: center;
     font-size: 40px;
 }
+
+@media screen and (max-width: 500px) {
+    .accordion__button-title {
+        font-size: 32px;
+    }
+}

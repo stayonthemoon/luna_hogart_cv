@@ -20,3 +20,18 @@
         max-width: 90vw;
     }
 }
+
+@media screen and (max-width: 660px) {
+    .animations__cards {
+        margin: 70px auto 0;
+        grid-row-gap: 40px;
+        column-gap: 40px;
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .animations__cards {
+        margin: 50px auto 0;
+    }
+}

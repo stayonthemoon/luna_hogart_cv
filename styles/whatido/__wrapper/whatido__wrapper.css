@@ -6,3 +6,15 @@
     padding: 0;
     width: 80vw;
 }
+
+@media screen and (max-width: 660px) {
+    .whatido__wrapper {
+        margin: 60px auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .whatido__wrapper {
+        margin: 40px auto;
+    }
+}

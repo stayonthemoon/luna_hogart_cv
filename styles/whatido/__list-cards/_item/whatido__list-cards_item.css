@@ -12,3 +12,29 @@
 .whatido__list-cards_item:nth-child(2) {
     margin-top: 40px;
 }
+
+@media screen and (max-width: 920px) {
+    .whatido__list-cards_item {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .whatido__list-cards_item {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .whatido__list-cards_item {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .whatido__list-cards_item:last-child,
+    .whatido__list-cards_item:nth-child(2) {
+        margin-top: 0;
+    }
+}

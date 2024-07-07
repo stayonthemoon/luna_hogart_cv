@@ -6,3 +6,23 @@
     grid-template-columns: repeat(4, minmax(160px, 250px));
     gap: 30px;
 }
+
+@media screen and (max-width: 920px) {
+    .whatido__list-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .whatido__list-cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 70vw;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .whatido__list-cards {
+        margin-top: 28px;
+    }
+}
