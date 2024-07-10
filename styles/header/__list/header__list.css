@@ -8,3 +8,9 @@
         max-width: 35vw;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .header__list {
+        max-width: 50vw;
+    }
+}

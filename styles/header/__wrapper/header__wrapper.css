@@ -16,3 +16,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media screen and (max-width: 425px) {
+    .header__wrapper {
+        gap: 1vw;
+        max-width: 85vw;
+    }
+}

@@ -12,6 +12,14 @@
     color: #F5F5F5;
 }
 
+.webdev_cards-item_pic,
+.webdesign_cards-item_pic {
+    width: 100%;
+}
+
+.animations_cards-item_pic {
+    max-width: 100%;
+}
 
 @media screen and (max-width: 1050px) {
     .animations__cards {

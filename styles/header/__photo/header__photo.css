@@ -1,7 +1,6 @@
 .header__photo {
     display: block;
     background-image: url("../../../images/header/header__photo.png");
-    background-size: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     max-height: 600px;
@@ -10,4 +9,10 @@
     height: 100%;
     margin: 0 auto;
     padding: 0;
+}
+
+@media screen and (max-width: 425px) {
+    .header__photo {
+        background-size: cover;
+    }
 }
